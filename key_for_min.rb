@@ -5,12 +5,13 @@ def key_for_min_value(name_hash)
   if name_hash == {}
     return nil
   end 
-  min_key = -9999
+  min_value = -9999
   if name_hash != {}
     name_hash.each do |key, value|
       check = value
-      if check > min_key
-        min_key = check
+      if check > min_value
+        min_key = key
+        min
       end 
     end
   end
